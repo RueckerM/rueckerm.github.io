@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Maximilian Rücker</div>
+        <div>
+            <ul class="nav-links">
+                <li> <a href="#about"> About</a></li>
+                <li> <a href="#research"> Research</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Maximilian Rücker profile picutre">
+        </div>
+        <div class="section__text">
+            <!--<h1 class="title"> Maximilian Rücker</h1>-->
+            <p class="section__text__p2">PhD Student in Statistics</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/CurriculumVitae_MaximilianRuecker.pdf')">
+                    Download CV
+                </button>
+                <!--<button 
+                class="btn btn-color-1" 
+                onclick="location.href = './#contact'">
+                    Contact Information
+                </button>-->
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="location.href= 'https://www.linkedin.com/in/maximilian-rücker-673793200/'">
+                <img 
+                src="./assets/github.png" 
+                alt="My GitHub profile"
+                class="icon"
+                onclick="location.href= 'https://github.com/RueckerM'">
+            </div>
+        </div>
+        <div class="contact__text"> 
+            <img 
+            src="./assets/email.png" 
+            alt="Experience icon"
+            class="icon">
+            <h4> Contact</h4>
+            <p>  Ulm University <br> 
+            Helmholtzstraße 20 <br>
+            89081 Ulm <br>
+             Baden-Württemberg <br>
+            Germany <br>
+            maximilian.ruecker(at)uni-ulm.de
+            </p>
+        </div>
+       
+    </section>
+    <section id="about">
+        <h1 class="title"> About me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="Experience icon"
+                        class="icon">
+                        <h3> Research topics</h3>
+                        <p>  I study high-dimensional linear but also non-linear panel data models.
+                            The goal is to establish new econometric methods for estimation and inference in (interactive) fixed effects models. </p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="Education icon"
+                        class="icon">
+                        <h3> Education</h3>
+                        <p>  <b> PhD Student (Since 2023)</b>
+                            <br> Supervisor: Prof. Dr. Michael Vogt </p>
+                        <p>  <b>M.Sc. Mathematics (2021-2023)</b> <br> Thesis: "High-Dimensional Inference with the Lasso."
+                            <br> <b>B.Sc. Business Mathematics (2017-2021) </b><br> Thesis: "Fractional Poisson Processes and Fractional Poisson Fields."
+                             </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "research">
+        <h1 class="title"> Research </h1>
+                    <h2> Publications </h2>
+                    <p>  <b>Estimation and Inference in High-Dimensional Panel Data Models with Interactive Fixed Effects" (2024)</b> 
+                     <br> Joint work with Oliver Linton, Michael Vogt
+                and Christopher Walsh. Available at ??? </p>
+               
+                
+                    <h2> Software </h2>
+                    <p>  <b>R-package <i>???</i> (2024)</b>  <br> Available at <a href="https://github.com/RueckerM"> GitHub</a> 
+                        for the estimation of the Lasso's effective noise proposed in
+                         "Estimating the Lasso's Effective Noise" (2021) by 
+                         Johannes Lederer and Michael Vogt. </p>
+
+                    <p>  <b>R-package  <i>hdcce</i> (2024)</b>  <br> Available at <a href="https://github.com/RueckerM/hdcce"> GitHub</a> 
+                        for estimation and inference in High-Dimensional Panel Data 
+                    Models with interactive fixed effects. </p>
+                
+                    <h2> Talks </h2>
+                    <p>  <b>International Panel Data Conference (2024)</b> <br>
+                        Speaker at the IPDC 2024 in Orléans about "Estimation and Inference in High-Dimensional
+                        Panel Data Models with Interactive Fixed Effects".  </p>
+    </section>
+    <script> src="script.js"</script>
+</body>
+</html>
